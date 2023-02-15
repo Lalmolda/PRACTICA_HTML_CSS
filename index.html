@@ -6,59 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthas</title>
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/header.css">
 </head>
 <body class = "body">
   <!-- El Header -->
   <header class="header">
-
-      
-    <nav class="navDesktop">
+   <nav class="navDesktop">
+    <!-- Desktop Menu -->
       <div class="titulo1"> 
-          <a href="index.html" class="a">
-            <h1 class="logo">Arthas</h1 alt="Arthas">
-          </a>
+        <a href="index.html" class="a">
+          Arthas
+        </a>
       </div>
       <div class="menuDesktop">
         <ul class= "menuItemDesktop">
           <li>
-              <a href="#projects" class="a">Proyectos</a>
-            </li>
-            <li>
-              <a href="#skills" class="a">Skills</a>
-            </li>
-            <li>
-              <a href="#contacto" class="a">Contacto</a>
-            </li>
-          </ul>
-        </div>
-        </nav>
-      
-       <!-- <div class="mobileMenu"> -->
- 
-        <div class="menuMobile">
-        <a href="#" class="logo" id="logo">Arthas</a>
-      
-        <!-- Hamburger icon -->
-        <input type="checkbox" id="sideMenu"/>
-      
-        <label id="hamb" class="hamb" for="sideMenu">
-          <span class="hamb-line">&#9776;</span>
-          <span id="menuCerrar">X</span>
-        </label>
-        
-        
-        
-        <!-- Menu -->
-        
-        <nav class="nav" id="nav">
-            <ul class="menu" id="menu">
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Blog</a> </li>
-              <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-          </div>
+            <a href="#projects" class="a">Proyectos</a>
+          </li>
+          <li>
+           <a href="#skills" class="a">Skills</a>
+          </li>
+          <li>
+            <a href="#contacto" class="a">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu Mobile-->
+    <div class="menuMobile">
+      <a href="index.html">Arthas</a>
+      <!-- Hamburger icon and ICON X, hidden checkbox -->
+      <input type="checkbox" id="sideMenu"/>
+      <label id="hamb" class="hamb" for="sideMenu">
+        <span class="hamb-line">&#9776;</span>
+        <span id="menuCerrar">X</span>
+      </label> 
+        <!-- Menu Mobile NAV-->
+      <nav class="nav" id="nav">
+        <ul class="menu" id="menu">
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blog</a> </li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+  <div>
+    <!--Dynamic Images-->
+    <picture class="img-container">  
+      <source
+          media="(max-width: 2180px)"
+          srcset="
+          images/header/Arthas_Header.jpeg 2180w,
+          images/header/Arthas_Header1440x.jpeg 1400w,
+          images/header/Arthas_Header1080x.jpeg 1080w,
+          images/header/Arthas_Header768x.jpeg 768w,
+          images/header/Arthas_Header518x.jpeg 518w,
+          images/header/Arthas_Header400x.jpeg 400w,
+          images/header/Arthas_Header360x.jpeg 360w
+          "
+        >
+        <img src="images/header/Arthas_Header.jpeg">
+    </picture>
+  </div>
+
   </header>
 </body>
 </html>
