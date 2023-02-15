@@ -1,20 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
 :root{
-  --white: #f9f9f9;
+  --white: rgb(255,255,255);
   --blue: rgb(27, 48, 78);
-  --light-blue: rgb(43, 66, 101);
+  --light-blue: rgb(55, 74, 103);
+  --black: #171310;
   --gray: #85888C;
 }
 
+html{
+  font-size: 100%;
+}
+
+body{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:12px;
+  letter-spacing: normal;
+  background-color: grey;
+  position:relative;
+}
+
+header{
+  background-color: var(--blue);
+  box-shadow: 1px 1px 5px 0px var(--light-blue);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:1.33em;
+  font-weight: bold;
+  /*min-height: 60px;*/
+}
+
 .navDesktop {
-    padding: 2% 2%;
+    padding: 0.5% 0.5%;
     position: sticky;
     display: none; 
     justify-content: space-between;
     align-items: center;
     background-color: var(--blue);
-    border: 2px solid red;
+    border: 2px var(--white);
   }
 
   .nav{
@@ -25,7 +54,7 @@
     display: none;
   }
 
-  .itulo1t{
+  .titulo1{
     display: none;
   }
 
@@ -33,13 +62,7 @@
     color:white;
     text-decoration: none;
   }
-  body{
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "Poppins", sans-serif;
-    font-size:larger;
-  }
+
 
 
   ul{  
@@ -67,20 +90,12 @@
   }
 
  /* Header */
-.header{
-  background-color: var(--blue);
-  box-shadow: 1px 1px 5px 0px var(--light-blue);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  align-items: center;
-  min-height: 60px;
-}
 
-.titulo2{
-  min-height: 60px;
-  display: flex;
-  justify-content: space-between;
+
+.menuMobile{
+  position: relative;
+  display: flex; 
+  justify-content: space-between; 
   align-items: center;
   padding-left: 2%;
   padding-right: 1%;
@@ -89,8 +104,6 @@
 .logo{
   display: inline-block;
   color: var(--white);
-  font-size: 20px;
-  /*margin-left: 10px;*/
 }
 
 /* Nav menu */
@@ -105,27 +118,42 @@
 .menu a{
   display: block;
   padding: 30px;
+  padding: 5%;
   color: var(--white);
+  background-color: var(--blue);
 }
 .menu a:hover{
   background-color: var(--light-blue);
+  transition: 0.2s;
 }
 
 .menuItemDesktop a:hover{
   background-color: var(--light-blue); 
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 
 
 /* Menu Icon */
 .hamb{
-  cursor: pointer;
-  float: right;
-  padding: 40px 20px;
+  padding: 2% 2%;
+  background-color: var(--blue);
+  font-weight: bold;
+
 }/* Style label tag */
 
-.hamb-line {
+.hamb-line{
+  cursor: pointer;
+  float: right;
+  color: var(--white);
+  font-weight: bold;
+}
+
+#menuCerrar{
+  display: none;
+}
+
+/*.hamb-line {
   background: var(--white);
   display: block;
   height: 2px;
@@ -133,7 +161,7 @@
   width: 24px;
 
 } /* Style span tag */
-
+/*
 .hamb-line::before,
 .hamb-line::after{
   background: var(--white);
@@ -149,14 +177,21 @@
 }
 .hamb-line::after{
   top: -5px;
-}
+}*/
 
 #sideMenu {
   display: none;
 } /* Hide checkbox */
+@media screen and (min-width: 360px) {
+  header{
+    font-size: 1.66em;
+  }
+}
 
 @media screen and (min-width: 768px) {
-
+  header{
+    font-size: 2em;
+  }
   .navDesktop{
     display: flex; 
   }
@@ -165,7 +200,7 @@
     display: none;
   }
 
-  .titulo2 {
+  .menuMobile {
     display: none;
   }
 
@@ -187,12 +222,45 @@
 #sideMenu:checked ~ #nav {
   visibility: visible;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--blue);
+  z-index: 99999;
+  border-color: white;
+  width:25%;
+  transition: all 2s ease-in;
 }
 
-#sideMenu:checked ~ #hamb {
+#sideMenu:checked ~ #menu li a {
+  background-color: var(--blue);
+}
+
+#sideMenu:checked ~ label .hamb-line {
   display: none;
 }
 
+#menuCerrar{
+  cursor: pointer;
+  float: right;
+  padding: 2% 2%;
+  color: white;
+}
+
+#sideMenu:checked ~ label #menuCerrar {
+  display: block;
+}
+
+#sideMenu:checked ~ #logo {
+  display: none;
+}
+
+
+
+#sideMenu2:checked ~ #menuCerrar {
+  display: none;
+}
 
 
 /*#side-menu:checked + #nav .menu .overlay {
