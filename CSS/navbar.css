@@ -46,8 +46,15 @@ header{
     border: 2px var(--white);
   }
 
-  .nav{
-    display: none;
+  #nav{
+    position:absolute;
+    left: -110px;
+  }
+
+  #nav ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 5000ms;
   }
 
   .menuDesktop{
@@ -220,7 +227,6 @@ header{
 }*/
 
 #sideMenu:checked ~ #nav {
-  visibility: visible;
   display: block;
   position: absolute;
   top: 0;
@@ -230,7 +236,12 @@ header{
   z-index: 99999;
   border-color: white;
   width:25%;
-  transition: all 2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#sideMenu:checked ~ #nav ul {
+  visibility: visible;
+  opacity: 1;
 }
 
 #sideMenu:checked ~ #menu li a {
