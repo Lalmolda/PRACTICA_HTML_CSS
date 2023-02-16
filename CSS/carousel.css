@@ -16,7 +16,7 @@
   }
 
   .carousel-videos {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-wrap: wrap;  /*La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas  */
     flex-direction: column;
@@ -27,12 +27,14 @@
   .carousel-videos > div {
     height: 100%;
     width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(68, 68 ,68);
-
+    background-color: var(--background);
   }
 
   .carousel-videos > div > iframe {
-    margin: auto; /* da margen igual a cada lado centrando los elementos */
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*margin: auto;*/ /* da margen igual a cada lado centrando los elementos */
+    display: block; /* Hace que podamos aplicar propiedades como margin */
   }
