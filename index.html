@@ -7,69 +7,90 @@
     <title>Arthas</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
 </head>
 <body class = "body">
-  <!-- El Header -->
-  <header class="header">
-   <nav class="navDesktop">
+  
+  
+ 
+  <nav class="navDesktop">
     <!-- Desktop Menu -->
-      <div class="titulo1"> 
-        <a href="index.html" class="a">
+    <div class="titulo1"> 
+      <a href="index.html" class="a">
           Arthas
-        </a>
-      </div>
-      <div class="menuDesktop">
-        <ul class= "menuItemDesktop">
-          <li>
-            <a href="#projects" class="a">Proyectos</a>
-          </li>
-          <li>
-           <a href="#skills" class="a">Skills</a>
-          </li>
-          <li>
-            <a href="#contacto" class="a">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Menu Mobile-->
-    <div class="menuMobile">
-      <a href="index.html">Arthas</a>
-      <!-- Hamburger icon and ICON X, hidden checkbox -->
-      <input type="checkbox" id="sideMenu"/>
-      <label id="hamb" class="hamb" for="sideMenu">
-        <span class="hamb-line">&#9776;</span>
-        <span id="menuCerrar">X</span>
-      </label> 
-        <!-- Menu Mobile NAV-->
-      <nav class="nav" id="nav">
-        <ul class="menu" id="menu">
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Blog</a> </li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
+      </a>
     </div>
-    
-  <div>
-    <!--Dynamic Images-->
-    <picture class="img-container">  
-      <source
-          media="(max-width: 2180px)"
-          srcset="
-          images/header/Arthas_Header.jpeg 2180w,
-          images/header/Arthas_Header1440x.jpeg 1400w,
-          images/header/Arthas_Header1080x.jpeg 1080w,
-          images/header/Arthas_Header768x.jpeg 768w,
-          images/header/Arthas_Header518x.jpeg 518w,
-          images/header/Arthas_Header400x.jpeg 400w,
-          images/header/Arthas_Header360x.jpeg 360w
-          "
-        >
-        <img src="images/header/Arthas_Header.jpeg">
-    </picture>
+
+    <div class="menuDesktop">
+      <ul class= "menuItemDesktop">
+        <li>
+          <a href="#historia" class="a">Mi historia</a>
+        </li>
+        <li>
+          <a href="#skills" class="a">Skills</a>
+        </li>
+        <li>
+          <a href="#contacto" class="a">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+    <!-- Menu Mobile-->
+  <div class="menuMobile">
+    <a href="index.html">Arthas</a>
+    <!-- Hamburger icon and ICON X, hidden checkbox -->
+    <input type="checkbox" id="sideMenu"/>
+    <label id="hamb" class="hamb" for="sideMenu">
+      <span class="hamb-line">&#9776;</span>
+      <span id="menuCerrar">X</span>
+    </label> 
+    <!-- Menu Mobile NAV-->
+    <nav class="nav" id="nav">
+      <ul class="menu" id="menu">
+        <li><a href="#historia">Mi historia</a></li>
+        <li><a href="#skills">Skills</a> </li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </div>
 
+  <!-- El Header -->
+  <header class="header">
+    <div class="backGroundImage">
+      <!--Dynamic Images-->
+      <picture class="img-container">  
+        <source
+            media="(max-width: 2180px)"
+            srcset="
+            images/header/Arthas_Header.jpeg 2180w,
+            images/header/Arthas_Header1440x.jpeg 1400w,
+            images/header/Arthas_Header1080x.jpeg 1080w,
+            images/header/Arthas_Header768x.jpeg 768w,
+            images/header/Arthas_Header518x.jpeg 518w,
+            images/header/Arthas_Header400x.jpeg 400w,
+            images/header/Arthas_Header360x.jpeg 360w
+            "
+          >
+          <img src="images/header/Arthas_Header.jpeg">
+      </picture>
+    </div>
   </header>
+
+  <section class="carousel">
+    
+    <div class="carousel-videos">
+      <div id="video1"><iframe width="50%" height="100%" src="https://www.youtube-nocookie.com/embed/nXoVC3tMeBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div id="video2"><iframe width="50%" height="100%" src="https://www.youtube-nocookie.com/embed/Liv05fzN-z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div id="video3"><iframe width="50%" height="100%" src="https://www.youtube-nocookie.com/embed/GTGUauJ9kqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
+    
+    
+    <div class="carousel-links" id="historia">
+      <a href="#video1" class="carousel-dot"></a>
+      <a href="#video2" class="carousel-dot"></a>
+      <a href="#video3" class="carousel-dot"></a>
+    </div>
+</section>
 </body>
 </html>
