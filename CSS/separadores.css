@@ -9,7 +9,7 @@
     font-weight: bold;
     box-shadow: 1px 1px 5px 0px var(--light-blue);
     min-height: 3vh;
-    border-bottom:1px solid var(--white);
+    border:1px solid var(--white);
     color:white;
 }
 
