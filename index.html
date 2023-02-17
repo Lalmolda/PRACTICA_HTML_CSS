@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/separadores.css">
     <link rel="stylesheet" href="CSS/skills.css">
     <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 
 <body class = "body">
@@ -31,6 +32,9 @@
         </li>
         <li>
           <a href="#skills" class="a">Skills</a>
+        </li>
+        <li>
+          <a href="#proyectos" class="a">Proyectos</a>
         </li>
         <li>
           <a href="#contacto" class="a">Contacto</a>
@@ -53,6 +57,7 @@
       <ul class="menu" id="menu">
         <li><a href="#historia">Mi historia</a></li>
         <li><a href="#skills">Skills</a> </li>
+        <li><a href="#proyectos">Proyectos</a> </li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -81,7 +86,10 @@
   </header>
 
   <!-- Separan cada sección los de class separadores -->
-  <div class="separadores">
+  <span></span>
+  <span></span>
+  <span></span>
+  <div class="separadores" id="historia">
     <span>Mi Historia</span>
   </div> 
 
@@ -94,7 +102,7 @@
     </div>
     
     
-    <div class="carousel-links" id="historia">
+    <div class="carousel-links">
       <a href="#video1" class="carousel-dot"></a>
       <a href="#video2" class="carousel-dot"></a>
       <a href="#video3" class="carousel-dot"></a>
@@ -128,7 +136,7 @@
   </div>
   <div class="skill">
       <span>Shadow</span>
-    <div class="pbar-container">
+    <div class="pbar-container" id="skills">
       <div class="progressBar animate-progress-bar w-75"></div>
     </div>
   </div>
@@ -176,7 +184,7 @@
   </div>
 
 
-  <div class="formArthas">
+  <div class="formArthas" id="contacto">
     <p class="textLabel">¿Cómo me conociste?</p>
     <br>
     <div class="checkBoxes">
@@ -213,7 +221,17 @@
 <!-- Footer -->
 
 <footer>
-  
+  <div class="socialMedia">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/iconos/instagram.jpg">
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/iconos/facebook.jpg">
+    </a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+      <img src="images/iconos/twitter.jpg">
+    </a>
+  </div>
 </footer>
 
 </body>
