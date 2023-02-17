@@ -113,13 +113,24 @@ ul{
   display: none;
 } /* Hide checkbox */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 250px) {
   header{
-    font-size: 1.66em;
+    font-size: 1.166em;
   }
 
   .menuMobile{
-    font-size: 1.66em;
+    font-size: 1.166em;
+  }
+
+}
+
+@media screen and (min-width: 360px) {
+  header{
+    font-size: 1.33em;
+  }
+
+  .menuMobile{
+    font-size: 1.33em;
   }
 
 }

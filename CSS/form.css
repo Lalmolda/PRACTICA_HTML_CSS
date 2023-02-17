@@ -15,16 +15,23 @@
     margin:auto;
 }
 
+@media screen and (min-width: 250px) {
+
+    .formArthas{
+        font-size:1em; 
+    }
+}
+
 @media screen and (min-width: 360px) {
 
     .formArthas{
-        font-size:1.33em; 
+        font-size:1.166em; 
     }
 }
 
 @media screen and (min-width: 768px) {
 
     .formArthas{
-        font-size:1.66em; 
+        font-size:1.33em; 
     }
 }
