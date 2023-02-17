@@ -7,10 +7,11 @@
     <title>Arthas</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/root.css">
-    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/headerNavbar.css">
     <link rel="stylesheet" href="CSS/carousel.css">
     <link rel="stylesheet" href="CSS/separadores.css">
     <link rel="stylesheet" href="CSS/skills.css">
+    <link rel="stylesheet" href="CSS/form.css">
 </head>
 
 <body class = "body">
@@ -41,7 +42,7 @@
     <!-- Menu Mobile-->
   <div class="menuMobile">
     <a href="index.html">Arthas</a>
-    <!-- Hamburger icon and ICON X, hidden checkbox -->
+    <!-- Hamburger icon Y ICON X, hidden checkbox -->
     <input type="checkbox" id="sideMenu"/>
     <label id="hamb" class="hamb" for="sideMenu">
       <span class="hamb-line">&#9776;</span>
@@ -60,7 +61,7 @@
   <!-- El Header -->
   <header class="header">
     <div class="backGroundImage">
-      <!--Dynamic Images-->
+      <!--Dynamic Images de Arthas em el header-->
       <picture class="img-container">  
         <source
             media="(max-width: 2180px)"
@@ -79,6 +80,7 @@
     </div>
   </header>
 
+  <!-- Separan cada sección los de class separadores -->
   <div class="separadores">
     <span>Mi Historia</span>
   </div> 
@@ -102,6 +104,8 @@
 <div class="separadores">
   <span>Mis Skills</span>
 </div> 
+
+<!-- Barras de progreso animadas -->
 
 <div class="Arthas">
   <p>Arthas Menethil, Príncipe Heredero de Lordaeron nació de Lianne Menethil y el Rey Terenas Menethil II, cuatro años antes de comenzar la Primera Guerra. El joven príncipe creció en un tiempo en el que las tierras de Azeroth eran devastadas por la guerra (sobre todo con los Orcos) y la Alianza se desvanecía en un horizonte de nubes negras. En su infancia fue amigo de Varian Wrynn.</p>
@@ -130,6 +134,87 @@
   </div>
 </div>
 </section>
+
+<!-- Formulario -->
+
+<div class="separadores">
+  <span>Contacto</span>
+</div> 
+
+<form class="formContainer" action="/contact" method="post">
+  <div class="textForm">
+    <div class="formArthas">
+      <span><label class="textLabel" for="name">Nombre</label>
+      <input required type="text" id="name" name="name" placeholder="Introduce tu nombre"></span>
+    </div>
+    <div class="formArthas">
+      <span><label class="textLabel" for="surname">Apellido</label>
+      <input placeholder="Introduce tu apellido" required type="text" name="text" id="surname"></span>
+    </div>
+    <div class="formArthas">
+      <span><label class="textLabel" for="phone">Teléfono</label>
+      <input
+        required
+        placeholder="Introduce tu número de teléfono"
+        id="phone"
+        type="tel"
+        name="phone"
+        pattern="[0-9]+"
+      ></span>
+    </div>
+    <div class="formArthas">
+      <span><label class="textLabel" for="github">Github</label>
+      <input
+        required
+        id="github"
+        type="text"
+        name="github"
+        pattern="^@[^\s]+"
+        placeholder="Formato: (@<username>)"
+      ></span>
+    </div>
+  </div>
+
+
+  <div class="formArthas">
+    <p class="textLabel">¿Cómo me conociste?</p>
+    <br>
+    <div class="checkBoxes">
+      <span><label for="university">Universidad</label>
+      <input required type="radio" name="contact" id="university" value="university">
+      </span>
+    </div>
+    <div class="checkBoxes">
+      <span><label for="keepcoding">Keepcoding kick-off</label>
+      <input required type="radio" name="contact" id="keepcoding" value="keepcoding">
+      </span>
+    </div>
+    <div class="checkBoxes">
+      <span><label for="school">Colegio</label>
+      <input required type="radio" name="contact" id="school" value="school">
+      </span>
+    </div>
+    <div class="checkBoxes">
+      <label for="github">Github</label>
+      <input required type="radio" name="contact" id="github" value="github">
+    </div>
+  </div>
+
+  <div class="formArthas">
+    <label class="textLabel" for="moreInfo">Más información</label>
+    <br>
+    <textarea required name="moreInfo" id="moreInfo" maxlength="180" placeholder="Escribe aquí" cols="30" rows="10"></textarea>
+  </div>
+  <div class="formArthas">
+    <button class="buttonArthas" type="submit">Enviar</button>
+  </div>
+</form>
+
+<!-- Footer -->
+
+<footer>
+  
+</footer>
 
 </body>
 </html>
